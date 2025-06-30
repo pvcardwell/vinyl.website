@@ -91,11 +91,14 @@
                 justify-content: center;
             }
             
-          
+            .grid img {
+                cursor: pointer;
+            }
             
-            
-        
         </style>
+        
+        
+        
         <meta charset="UTF-8" />
         <title>Homepage</title>
     </head>
@@ -113,32 +116,325 @@
        
         
     <div class="grid">
-      <div><img src="website-images/ledz-homepage.png" width="180" height="215" alt="Beatles album cover"></div>
-      <div><img src="website-images/pinkfloyd-homepage.png" width="180" height="215" alt="Pink Floyd album cover"></div>
-      <div><img src="website-images/gratefuldead-homepage.png" width="180" height="215" alt="Fleetwood Mac album cover"></div>
-      <div><img src="website-images/top-homepage.png" width="180" height="215" alt="Twenty One Pilots album cover"></div>
-      <div><img src="website-images/kendrik-homepage.png" width="180" height="215" alt="Kendrik Lamar album cover"></div>
-      <div><img src="website-images/nickelback-homepage.png" width="180" height="215" alt="Nickelback album cover"></div>
-      <div><img src="website-images/beatles-homepage.png" width="180" height="215" alt="Beatles album cover"></div>
-      <div><img src="website-images/shaggy-homepage.png" width="180" height="215" alt="Shaggy album cover"></div>
-      <div><img src="website-images/prince-homepage.png" width="180" height="215" alt="Prince album cover"></div>
-      <div><img src="website-images/clash-homepage.png" width="180" height="215" alt="The Clash album cover"></div>
-      <div><img src="website-images/dancegavin-homepage.png" width="180" height="215" alt="Dance Gavin Dance album cover"></div>
-      <div><img src="website-images/badwolves-homepage.png" width="180" height="215" alt="Bad Wolves album cover"></div>
-      <div><img src="website-images/skipknot-homepage.png" width="180" height="215" alt="Slipknot album cover"></div>
-      <div><img src="website-images/noahk-homepage.png" width="180" height="215" alt="Noah Kahan album cover"></div>
-      <div><img src="website-images/louisp-homepage.png" width="180" height="215" alt="Louis Prima album cover"></div> 
-      <div><img src="website-images/donnas-homepage.png" width="180" height="215" alt="Donna Summer album cover"></div>    
-      <div><img src="website-images/shakeyg-homepage.png" width="180" height="215" alt="Shakey Graves album cover"></div>
-      <div><img src="website-images/lindseys-homepage.png" width="180" height="215" alt="Lindsey Sterling album cover"></div>
-      <div><img src="website-images/johnnyc-homepage.png" width="180" height="215" alt="Johnny Cash album cover"></div>
-      <div><img src="website-images/kandc-homepage.png" width="180" height="215" alt="King and Country album cover"></div>
-      <div><img src="website-images/acdc-homepage.png" width="180" height="215" alt="ACDC album cover"></div>
-      <div><img src="website-images/franko-homepage.png" width="180" height="215" alt="Frank Ocean album cover"></div>
-      <div><img src="website-images/billie-hompage.png" width="180" height="215" alt="Billie Eilish album cover"></div>
-      <div><img src="website-images/billw-homepage.png" width="180" height="215" alt="Bill Withers album cover"></div>
+      <div>
+          <img src="website-images/ledz-homepage.png" width="180" height="215" alt="Led Zeplin album cover"  onclick="togglePlayPause1()">
+          <audio id="LedZ1" src="vinyl-audio/1%20Black%20Dog.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/pinkfloyd-homepage.png" width="180" height="215" alt="Pink Floyd album cover" onclick="togglePlayPause2()">
+          <audio id="PinkF2" src="vinyl-audio/2%20Money.mp3"></audio>
+        </div>
+        
+        
+      <div>
+          <img src="website-images/gratefuldead-homepage.png" width="180" height="215" alt="Fleetwood Mac album cover" onclick="togglePlayPause3()">
+          <audio id="GD3" src="vinyl-audio/3%20China%20Cat.mp3"></audio>
+        </div>
+        
+        
+      <div>
+          <img src="website-images/top-homepage.png" width="180" height="215" alt="Twenty One Pilots album cover" onclick="togglePlayPause4()">
+          <audio id="TOPilots4" src="vinyl-audio/4%20On%20TV.mp3"></audio>
+        </div>
+        
+        
+      <div>
+          <img src="website-images/kendrik-homepage.png" width="180" height="215" alt="Kendrick Lamar album cover" onclick="togglePlayPause5()">
+          <audio id="KendrickL5" src="vinyl-audio/5%20GOD..mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/nickelback-homepage.png" width="180" height="215" alt="Nickelback album cover" onclick="togglePlayPause6()">
+          <audio id="Nickelback6" src="vinyl-audio/6%20Rockstar.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/beatles-homepage.png" width="180" height="215" alt="Beatles album cover" onclick="togglePlayPause7()">
+          <audio id="Beatles7" src="vinyl-audio/7%20Standing%20There.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/shaggy-homepage.png" width="180" height="215" alt="Shaggy album cover" onclick="togglePlayPause8()">
+          <audio id="Shaggy8" src="vinyl-audio/8%20Wasn't%20Me.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/prince-homepage.png" width="180" height="215" alt="Prince album cover" onclick="togglePlayPause9()">
+          <audio id="Prince9" src="vinyl-audio/9%201999.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/clash-homepage.png" width="180" height="215" alt="The Clash album cover" onclick="togglePlayPause10()">
+          <audio id="Clash10" src="vinyl-audio/10%20Stay%20or%20Go.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/dancegavin-homepage.png" width="180" height="215" alt="Dance Gavin Dance album cover" onclick="togglePlayPause11()">
+          <audio id="DGD11" src="vinyl-audio/11%20Care.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/badwolves-homepage.png" width="180" height="215" alt="Bad Wolves album cover" onclick="togglePlayPause12()">
+          <audio id="BadWolves12" src="vinyl-audio/12%20Sober.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/skipknot-homepage.png" width="180" height="215" alt="Slipknot album cover" onclick="togglePlayPause13()">
+          <audio id="Slipknot13" src="vinyl-audio/13%20Kills%20Least.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/noahk-homepage.png" width="180" height="215" alt="Noah Kahan album cover" onclick="togglePlayPause14()">
+          <audio id="NoahK14" src="vinyl-audio/14%20All%20My%20Love.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/louisp-homepage.png" width="180" height="215" alt="Louis Prima album cover" onclick="togglePlayPause15()">
+          <audio id="LouisP15" src="vinyl-audio/15%20Jump,%20Jive.mp3"></audio>
+        </div> 
+        
+      <div>
+          <img src="website-images/donnas-homepage.png" width="180" height="215" alt="Donna Summer album cover" onclick="togglePlayPause16()">
+          <audio id="DonnaS16" src="vinyl-audio/16%20Hot%20Stuff.mp3"></audio>
+        </div>   
+        
+      <div>
+          <img src="website-images/shakeyg-homepage.png" width="180" height="215" alt="Shakey Graves album cover" onclick="togglePlayPause17()">
+          <audio id="ShakeyG17" src="vinyl-audio/17%20Roll%20the%20Bones.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/lindseys-homepage.png" width="180" height="215" alt="Lindsey Sterling album cover" onclick="togglePlayPause18()">
+          <audio id="LindseyS18" src="vinyl-audio/18%20Ice%20Storm.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/johnnyc-homepage.png" width="180" height="215" alt="Johnny Cash album cover" onclick="togglePlayPause19()">
+          <audio id="JohnnyC19" src="vinyl-audio/19%20Cocoaine%20Blues.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/kandc-homepage.png" width="180" height="215" alt="King and Country album cover" onclick="togglePlayPause20()">
+          <audio id="KC20" src="vinyl-audio/20%20Control.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/acdc-homepage.png" width="180" height="215" alt="ACDC album cover" onclick="togglePlayPause21()">
+          <audio id="ACDC21" src="vinyl-audio/21%20Highway%20to%20Hell.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/franko-homepage.png" width="180" height="215" alt="Frank Ocean album cover" onclick="togglePlayPause22()">
+          <audio id="FrankO22" src="vinyl-audio/22%20Nights.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/billie-hompage.png" width="180" height="215" alt="Billie Eilish album cover" onclick="togglePlayPause23()">
+          <audio id="BillieE23" src="vinyl-audio/23%20bad%20guy.mp3"></audio>
+        </div>
+        
+      <div>
+          <img src="website-images/billw-homepage.png" width="180" height="215" alt="Bill Withers album cover" onclick="togglePlayPause24()">
+          <audio id="BillW24" src="vinyl-audio/24%20No%20Sunshine.mp3"></audio>
+        </div>
+        
     </div>    
+  
+        <script>
+        var audio = document.getElementById("LedZ1"); // Get the audio element by its ID
 
-    
-    </body>
+        function togglePlayPause1() {
+        if (LedZ1.paused) { // Check if the audio is paused
+        LedZ1.play();     // Play the audio
+        } else {
+        LedZ1.pause();    // Pause the audio
+            }
+        }
+            
+        function togglePlayPause2() {
+        if (PinkF2.paused) { // Check if the audio is paused
+        PinkF2.play();     // Play the audio
+        } else {
+        PinkF2.pause();    // Pause the audio
+            }
+        }   
+            
+        function togglePlayPause3() {
+        if (GD3.paused) { // Check if the audio is paused
+        GD3.play();     // Play the audio
+        } else {
+        GD3.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause4() {
+        if (TOPilots4.paused) { // Check if the audio is paused
+        TOPilots4.play();     // Play the audio
+        } else {
+        TOPilots4.pause();    // Pause the audio
+            }
+        }  
+            
+        function togglePlayPause5() {
+        if (KendrickL5.paused) { // Check if the audio is paused
+        KendrickL5.play();     // Play the audio
+        } else {
+        KendrickL5.pause();    // Pause the audio
+            }
+        }  
+            
+        function togglePlayPause6() {
+        if (Nickelback6.paused) { // Check if the audio is paused
+        Nickelback6.play();     // Play the audio
+        } else {
+        Nickelback6.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause7() {
+        if (Beatles7.paused) { // Check if the audio is paused
+        Beatles7.play();     // Play the audio
+        } else {
+        Beatles7.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause8() {
+        if (Shaggy8.paused) { // Check if the audio is paused
+        Shaggy8.play();     // Play the audio
+        } else {
+        Shaggy8.pause();    // Pause the audio
+            }
+        }
+            
+        function togglePlayPause9() {
+        if (Prince9.paused) { // Check if the audio is paused
+        Prince9.play();     // Play the audio
+        } else {
+        Prince9.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause10() {
+        if (Clash10.paused) { // Check if the audio is paused
+        Clash10.play();     // Play the audio
+        } else {
+        Clash10.pause();    // Pause the audio
+            }
+        } 
+        
+        function togglePlayPause11() {
+        if (DGD11.paused) { // Check if the audio is paused
+        DGD11.play();     // Play the audio
+        } else {
+        DGD11.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause12() {
+        if (BadWolves12.paused) { // Check if the audio is paused
+        BadWolves12.play();     // Play the audio
+        } else {
+        BadWolves12.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause13() {
+        if (Slipknot13.paused) { // Check if the audio is paused
+        Slipknot13.play();     // Play the audio
+        } else {
+        Slipknot13.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause14() {
+        if (NoahK14.paused) { // Check if the audio is paused
+        NoahK14.play();     // Play the audio
+        } else {
+        NoahK14.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause15() {
+        if (LouisP15.paused) { // Check if the audio is paused
+        LouisP15.play();     // Play the audio
+        } else {
+        LouisP15.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause16() {
+        if (DonnaS16.paused) { // Check if the audio is paused
+        DonnaS16.play();     // Play the audio
+        } else {
+        DonnaS16.pause();    // Pause the audio
+            }
+        }  
+            
+        function togglePlayPause17() {
+        if (ShakeyG17.paused) { // Check if the audio is paused
+        ShakeyG17.play();     // Play the audio
+        } else {
+        ShakeyG17.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause18() {
+        if (LindseyS18.paused) { // Check if the audio is paused
+        LindseyS18.play();     // Play the audio
+        } else {
+        LindseyS18.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause19() {
+        if (JohnnyC19.paused) { // Check if the audio is paused
+        JohnnyC19.play();     // Play the audio
+        } else {
+        JohnnyC19.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause20() {
+        if (KC20.paused) { // Check if the audio is paused
+        KC20.play();     // Play the audio
+        } else {
+        KC20.pause();    // Pause the audio
+            }
+        } 
+            
+        function togglePlayPause21() {
+        if (ACDC21.paused) { // Check if the audio is paused
+        ACDC21.play();     // Play the audio
+        } else {
+        ACDC21.pause();    // Pause the audio
+            }
+        }
+            
+        function togglePlayPause22() {
+        if (FrankO22.paused) { // Check if the audio is paused
+        FrankO22.play();     // Play the audio
+        } else {
+        FrankO22.pause();    // Pause the audio
+            }
+        }  
+            
+        function togglePlayPause23() {
+        if (BillieE23.paused) { // Check if the audio is paused
+        BillieE23.play();     // Play the audio
+        } else {
+        BillieE23.pause();    // Pause the audio
+            }
+        }  
+            
+        function togglePlayPause24() {
+        if (BillW24.paused) { // Check if the audio is paused
+        BillW24.play();     // Play the audio
+        } else {
+        BillW24.pause();    // Pause the audio
+            }
+        }    
+        </script>            
+</body>
 </html>
